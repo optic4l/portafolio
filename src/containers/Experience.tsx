@@ -1,10 +1,10 @@
-import { Container } from "react-bootstrap"
+
 
 const Experience = () => {
   return (
-    <Container>
+    <div className='container'>
       <h1>Experiencia</h1>
-    </Container>
+    </div>
   )
 }
 

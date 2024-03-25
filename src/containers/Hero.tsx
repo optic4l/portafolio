@@ -1,12 +1,11 @@
-import { Container } from "react-bootstrap"
-import './Hero.css'
 
 const Hero = () => {
   return (
-    <Container >
-        
-
-    </Container>
+      <div className='container'>
+        <p>Hola! Mi nombre es</p>
+        <p className="">Lucas Droguett Garate,</p>
+        <p><strong>Soy desarrollador de software</strong></p>
+      </div>
   )
 }
 

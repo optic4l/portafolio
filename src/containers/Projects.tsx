@@ -1,11 +1,11 @@
-import { Container } from "react-bootstrap"
+
 
 
 const Projects = () => {
   return (
-    <Container>
-        <h1>Proyectos</h1>
-    </Container>
+    <div className='container'>
+      <h1>Proyectos</h1>
+    </div>
   )
 }
 

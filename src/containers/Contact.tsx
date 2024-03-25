@@ -1,10 +1,12 @@
-import { Container } from "react-bootstrap"
+
 
 const Contact = () => {
   return (
-    <Container>
-        <h1>Contacto</h1>
-    </Container>
+
+    <div className='container mx-auto px-4'>
+      <h1 >Contacto</h1>
+    </div>
+    
   )
 }
 

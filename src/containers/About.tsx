@@ -1,10 +1,11 @@
-import { Container } from "react-bootstrap"
+
 
 const About = () => {
   return (
-    <Container>
-        <h1>Sobre mi</h1>
-    </Container>
+    <div className='container'>
+      <h1>Sobre mi</h1>
+    </div>
+   
   )
 }
 
