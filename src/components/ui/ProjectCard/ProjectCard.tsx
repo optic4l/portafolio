@@ -1,3 +1,4 @@
+import Carousel from "./Carousel";
 import TechList from "./TechList";
 
 interface Tech {
@@ -26,6 +27,14 @@ const ProjectCard = ({
       "my-2 flex gap-3 flex-row-reverse h-[60vh] justify-around p-4 shadow-md shadow-jaguar-900/40";
     classElement = "w-50 flex flex-col justify-center gap-2 ps-3 ";
   }
+  const slides = [
+    "./src/assets/proyecto1/img1.png",
+    "./src/assets/proyecto1/img2.png",
+    "./src/assets/proyecto1/img3.png",
+    "./src/assets/proyecto1/img4.png",
+    "./src/assets/proyecto1/img5.png",
+    "./src/assets/proyecto1/img6.png",
+  ];
   return (
     <div className={classContainer}>
       <div className={classElement}>
@@ -35,7 +44,13 @@ const ProjectCard = ({
         </div>
         <p className=" flex-grow ">{children}</p>
       </div>
-      <div className="w-50 border">Imagen</div>
+      <div className="w-50 max-w-lg ">
+        <Carousel>
+          {slides.map((slide) => (
+            <img src={slide} />
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };
