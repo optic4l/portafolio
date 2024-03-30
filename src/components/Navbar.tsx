@@ -1,31 +1,30 @@
-
-
 const NavBar = () => {
   const navlinks = [
-    ['Inicio', '#home'],
-    ['Proyectos', '#projects'],
-    ['Tecnologias', '#techs'],
-    ['Sobre mi','#about'],
-    ['Contacto', '#contact']
-  ]
+    // ["Inicio", "#home"],
+    ["Proyectos", "#projects"],
+    // ["Tecnologias", "#techs"],
+    ["Sobre mi", "#about"],
+    ["Contacto", "#contact"],
+  ];
   return (
-    <div className='container flex justify-around align-middle py-4 shadow-sm'>
-      <div>
-        <strong>Lucas Droguett</strong>
-         
+    <div className="container flex justify-between rounded-md bg-jaguar-950/50 pb-3 pt-4 align-middle text-lg shadow-md shadow-jaguar-400/40 backdrop-blur-sm">
+      <div className="font-grotesk text-2xl font-semibold">
+        <a href="#">
+          Lucas <span className="text-jaguar-500 ">Droguett</span>
+        </a>
       </div>
-      <div className='flex justify-between'>
+      <div className="flex ">
         <nav>
-          {
-            navlinks.map(([title, url]) => (
-              <a href={url} className='px-3 py-2 focus:text-purple hover:text-dark-purple'>{title}</a>
-            ))
-          }
+          {navlinks.map(([title, url]) => (
+            <a
+              href={url}
+              className="px-3 py-2 hover:text-jaguar-500 focus:text-jaguar-400"
+            >
+              {title}
+            </a>
+          ))}
         </nav>
-        <button className='rounded-lg w-20 hover:bg-blue outline outline-1 hover:outline-orange hover:text-orange'>CV</button>
       </div>
-
-    
     </div>
   );
 };
