@@ -29,7 +29,7 @@ const Projects = () => {
             </div>
           </div>
           <p className=" flex-grow ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+            Lorem ipsum dolor sit amet consectetur adiisicing elit. Quo
             perferendis corrupti nemo consectetur odio soluta numquam placeat id
             dolore asperiores! Omnis dicta eligendi autem at animi reiciendis,
             aut neque sequi.
