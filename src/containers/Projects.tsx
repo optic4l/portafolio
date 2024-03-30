@@ -2,41 +2,49 @@ import djangoLogo from "../assets/backstack/django.svg";
 import pythonLogo from "../assets/backstack/python-4.svg";
 import jsLogo from "../assets/frontstack/logo-javascript.svg";
 import reactLogo from "../assets/frontstack/react.svg";
+import ProjectCard from "../components/ui/ProjectCard/ProjectCard";
 
 const Projects = () => {
+  const project1 = [
+    {
+      nombre: "react",
+      imagen: reactLogo,
+    },
+    {
+      nombre: "Javascript",
+      imagen: jsLogo,
+    },
+    {
+      nombre: "Django",
+      imagen: djangoLogo,
+    },
+    {
+      nombre: "Python",
+      imagen: pythonLogo,
+    },
+  ];
+
   return (
-    <div id="projects" className="container mt-20 h-[500px] ">
+    <div id="projects" className="container flex h-auto flex-col gap-5 pt-20">
       <h1 className="text-3xl">Proyectos</h1>
-      <div className="flex h-[400px] justify-around  py-4">
-        <div className="w-50 flex flex-col justify-center gap-2 pe-3 ">
-          <h1 className=" text-xl">Nombre del proyecto</h1>
-          <div className="d-flex w-full gap-5  py-3">
-            <div className="flex items-center gap-1">
-              <img className="w-6 rounded-lg" src={reactLogo} />
-              <p>react</p>
-            </div>
-            <div className="flex items-center gap-1">
-              <img className="w-6 rounded-lg" src={jsLogo} />
-              <p>Javascript</p>
-            </div>
-            <div className="flex items-center gap-1">
-              <img className="w-6 rounded-lg" src={djangoLogo} />
-              <p>django</p>
-            </div>
-            <div className="flex items-center gap-1">
-              <img className="w-6 rounded-lg" src={pythonLogo} />
-              <p>python</p>
-            </div>
-          </div>
-          <p className=" flex-grow ">
-            Lorem ipsum dolor sit amet consectetur adiisicing elit. Quo
-            perferendis corrupti nemo consectetur odio soluta numquam placeat id
-            dolore asperiores! Omnis dicta eligendi autem at animi reiciendis,
-            aut neque sequi.
-          </p>
-        </div>
-        <div className="w-50 border">Imagen</div>
-      </div>
+      <ProjectCard nombre="Proyecto numero 1" techs={project1} variant="start">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ipsum
+        ullam, quas odio sit aliquid amet delectus eius quidem vel
+        exercitationem est. Ratione tenetur architecto rerum, consequuntur ipsa
+        corporis nihil?
+      </ProjectCard>
+      <ProjectCard nombre="Proyecto numero 2" techs={project1} variant="end">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vitae
+        delectus. Esse, saepe veniam vitae vel neque blanditiis nam? Maiores
+        consequuntur incidunt nesciunt quos praesentium ut minima. Explicabo,
+        nesciunt expedita.
+      </ProjectCard>
+      <ProjectCard nombre="Proyecto numero 3" techs={project1} variant="start">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni,
+        officiis. Praesentium nesciunt voluptas libero ratione, pariatur
+        incidunt sunt porro maxime numquam fugit sint est! Temporibus
+        necessitatibus porro delectus maiores obcaecati?
+      </ProjectCard>
     </div>
   );
 };
