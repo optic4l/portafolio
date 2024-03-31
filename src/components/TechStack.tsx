@@ -27,31 +27,31 @@ const TechStack = () => {
     <div className="d-flex container  mt-[120px] h-[400px] flex-col content-center items-center ">
       <h2 className=" mb-6 border-b border-jaguar-400 text-3xl">Tech Stack</h2>
       <div className="d-flex h-100 w-100 justify-between gap-3 pt-4">
-        <CardTech bgimage="/src/assets/frontstack/frontBG.svg">
+        <CardTech type="front">
           <ItemL logo={reactlogo} text="React Js" />
           <ItemR logo={tailwind} text="Tailwind CSS" />
           <ItemL logo={jsLogo} text="Javascript" />
           <ItemR logo={htmlLogo} text="HTML" />
         </CardTech>
 
-        <CardTech bgimage="/src/assets/backstack/server.svg">
+        <CardTech type="back">
           <ItemL logo={djangoLogo} text="Django - DRF" />
           <ItemR logo={pythonLogo} text="Python" />
           <ItemL logo={nodeLogo} text="Node JS" />
         </CardTech>
 
-        <CardTech bgimage="/src/assets/bddstack/bddBG.svg">
+        <CardTech type="bdd">
           <ItemL logo={mysqlLogo} text="MySQL" />
           <ItemR logo={postgreLogo} text="PostgreSQL" />
         </CardTech>
 
-        <CardTech bgimage="/src/assets/toolstack/toolsBG.svg">
+        <CardTech type="tools">
           <ItemL logo={gitLogo} text="Git" />
           <ItemR logo={postmanLogo} text="Postman" />
           <ItemL logo={vscLogo} text="Visual Studio Code" />
         </CardTech>
 
-        <CardTech bgimage="/src/assets/others/otherBG.svg">
+        <CardTech type="others">
           <ItemL logo={ubuntuLogo} text="S.O. Linux" />
           <ItemR logo={azureLogo} text="Azure" />
           <ItemL logo={awsLogo} text="AWS" />
