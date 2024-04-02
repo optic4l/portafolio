@@ -15,7 +15,6 @@ import postmanLogo from "../assets/toolstack/postman.svg";
 import vscLogo from "../assets/toolstack/visual-studio-code-1.svg";
 
 import arduinoLogo from "../assets/others/arduino.svg";
-import awsLogo from "../assets/others/aws-2.svg";
 import azureLogo from "../assets/others/azure-2.svg";
 import ubuntuLogo from "../assets/others/ubuntu-4.svg";
 
@@ -54,7 +53,6 @@ const TechStack = () => {
         <CardTech type="others">
           <ItemL logo={ubuntuLogo} text="S.O. Linux" />
           <ItemR logo={azureLogo} text="Azure" />
-          <ItemL logo={awsLogo} text="AWS" />
           <ItemR logo={arduinoLogo} text="Arduino" />
         </CardTech>
       </div>

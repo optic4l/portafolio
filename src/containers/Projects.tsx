@@ -7,7 +7,7 @@ import ProjectCard from "../components/ui/ProjectCard/ProjectCard";
 const Projects = () => {
   const project1 = [
     {
-      nombre: "react",
+      nombre: "React",
       imagen: reactLogo,
     },
     {
@@ -22,11 +22,27 @@ const Projects = () => {
       nombre: "Python",
       imagen: pythonLogo,
     },
+    {
+      nombre: "Bootstrap",
+      imagen: reactLogo,
+    },
+    {
+      nombre: "Power BI",
+      imagen: reactLogo,
+    },
+    {
+      nombre: "Azure Cloud",
+      imagen: reactLogo,
+    },
   ];
 
   return (
-    <div id="projects" className="container flex h-auto flex-col gap-5 pt-20">
-      <h1 className="text-3xl">Proyectos</h1>
+    <div id="projects" className="container flex  h-auto flex-col gap-5 pt-20">
+      <div className=" bg-gradient-to-r from-jaguar-50 via-jaguar-300 to-jaguar-950 to-65% pb-0.5">
+        <div className=" bg-jaguar-950">
+          <h1 className="text-3xl">Proyectos</h1>
+        </div>
+      </div>
       <ProjectCard nombre="Proyecto numero 1" techs={project1} variant="start">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit ipsum
         ullam, quas odio sit aliquid amet delectus eius quidem vel
