@@ -1,12 +1,12 @@
 import Carousel from "./Carousel";
 import TechList from "./TechList";
 
-import img1 from "../../../assets/proyecto1/img1.png";
-import img2 from "../../../assets/proyecto1/img2.png";
-import img3 from "../../../assets/proyecto1/img3.png";
-import img4 from "../../../assets/proyecto1/img4.png";
-import img5 from "../../../assets/proyecto1/img5.png";
-import img6 from "../../../assets/proyecto1/img6.png";
+import img1 from "../../../../public/assets/project1/carousel/img1.png";
+import img2 from "../../../../public/assets/project1/carousel/img2.png";
+import img3 from "../../../../public/assets/project1/carousel/img3.png";
+import img4 from "../../../../public/assets/project1/carousel/img4.png";
+import img5 from "../../../../public/assets/project1/carousel/img5.png";
+import img6 from "../../../../public/assets/project1/carousel/img6.png";
 
 interface Tech {
   nombre: string;
@@ -42,7 +42,7 @@ const ProjectCard = ({
         <div className="flex w-full flex-wrap py-3">
           <TechList techs={techs} />
         </div>
-        <p className=" flex-grow ">{children}</p>
+        <p className=" flex-grow text-base">{children}</p>
       </div>
       <div className="w-50 max-w-lg ">
         <Carousel>

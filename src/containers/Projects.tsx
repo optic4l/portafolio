@@ -1,41 +1,6 @@
-import djangoLogo from "../assets/backstack/django.svg";
-import pythonLogo from "../assets/backstack/python-4.svg";
-import jsLogo from "../assets/frontstack/logo-javascript.svg";
-import reactLogo from "../assets/frontstack/react.svg";
 import ProjectCard from "../components/ui/ProjectCard/ProjectCard";
-
+import { project1, project2 } from "../data/projects.ts";
 const Projects = () => {
-  const project1 = [
-    {
-      nombre: "React",
-      imagen: reactLogo,
-    },
-    {
-      nombre: "Javascript",
-      imagen: jsLogo,
-    },
-    {
-      nombre: "Django",
-      imagen: djangoLogo,
-    },
-    {
-      nombre: "Python",
-      imagen: pythonLogo,
-    },
-    {
-      nombre: "Bootstrap",
-      imagen: reactLogo,
-    },
-    {
-      nombre: "Power BI",
-      imagen: reactLogo,
-    },
-    {
-      nombre: "Azure Cloud",
-      imagen: reactLogo,
-    },
-  ];
-
   return (
     <div id="projects" className="container flex  h-auto flex-col gap-5 pt-20">
       <div className=" bg-gradient-to-r from-jaguar-50 via-jaguar-300 to-jaguar-950 to-65% pb-0.5">
@@ -49,7 +14,7 @@ const Projects = () => {
         exercitationem est. Ratione tenetur architecto rerum, consequuntur ipsa
         corporis nihil?
       </ProjectCard>
-      <ProjectCard nombre="Proyecto numero 2" techs={project1} variant="end">
+      <ProjectCard nombre="Proyecto numero 2" techs={project2} variant="end">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vitae
         delectus. Esse, saepe veniam vitae vel neque blanditiis nam? Maiores
         consequuntur incidunt nesciunt quos praesentium ut minima. Explicabo,

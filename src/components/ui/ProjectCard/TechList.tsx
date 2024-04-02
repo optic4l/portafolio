@@ -11,7 +11,7 @@ const TechList: React.FC<{ techs: Tech[] }> = ({ techs }) => {
       {techs.map((tech: Tech, index: number) => (
         <div key={index} className="flex items-center gap-1 pe-4">
           <img className="w-6 rounded-lg" src={tech.imagen} />
-          <p>{tech.nombre}</p>
+          <p className="text-sm">{tech.nombre}</p>
         </div>
       ))}
     </>
