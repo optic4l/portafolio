@@ -1,6 +1,7 @@
 import Carousel from "./Carousel";
 import TechList from "./TechList";
 
+import { ReactElement } from "react";
 import img1 from "../../../../public/assets/project1/carousel/img1.png";
 import img2 from "../../../../public/assets/project1/carousel/img2.png";
 import img3 from "../../../../public/assets/project1/carousel/img3.png";
@@ -21,7 +22,7 @@ const ProjectCard = ({
 }: {
   nombre: string;
   techs: Tech[];
-  children: string;
+  children: ReactElement | string;
   variant: string;
 }) => {
   let classContainer =
